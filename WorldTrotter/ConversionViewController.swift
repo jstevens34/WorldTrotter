@@ -57,13 +57,20 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func textField(textField: UITextField,
-                   shouldChangeCharactersInRange range: NSRange,
-                                                 replacementString string: String) -> Bool{
-        print("Current text: \(textField.text)")
-        print("Replacement text: \(string)")
+    
+    func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
-        return true 
+        let existingTextHasDecimalSeperator = textField.text?.rangeOfString(".")
+        let replacementTextHasDecimalSeperator = string.rangeOfString(".")
+            
+        
+        if existingTextHasDecimalSeperator != nil &&
+            replacementTextHasDecimalSeperator != nil   {
+            return false
+        }
+        else{
+            return true
+        }
     }
     
 }
