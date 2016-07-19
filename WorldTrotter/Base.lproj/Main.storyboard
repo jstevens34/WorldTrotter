@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aka-eH-wVg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BGo-0t-Nnt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,6 +73,7 @@
                             <outletCollection property="gestureRecognizers" destination="kbQ-qW-IjU" appends="YES" id="09y-lu-htr"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2bR-Pv-Rjj"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="rcb-k8-Vgl" id="K2E-MK-cOv"/>
                         <outlet property="textField" destination="Xxw-M4-rAo" id="Bnl-1o-wys"/>
@@ -85,8 +86,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="405" y="363"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="k3X-Ya-Mha">
             <objects>
                 <viewController id="aka-eH-wVg" sceneMemberID="viewController">
@@ -94,10 +96,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
+                    <tabBarItem key="tabBarItem" title="Item" id="nb3-q3-rM0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9C-cy-zHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="240"/>
+            <point key="canvasLocation" x="1305" y="368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="QGf-4N-2Vg">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BGo-0t-Nnt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Oab-kD-LGB">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aka-eH-wVg" kind="relationship" relationship="viewControllers" id="Ckn-2Q-Ggd"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mKd-Vx-mFh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sd1-OX-3RI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="813" y="-550"/>
         </scene>
     </scenes>
 </document>
