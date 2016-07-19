@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,7 @@
                             <outletCollection property="gestureRecognizers" destination="kbQ-qW-IjU" appends="YES" id="09y-lu-htr"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2bR-Pv-Rjj"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="2bR-Pv-Rjj"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="rcb-k8-Vgl" id="K2E-MK-cOv"/>
                         <outlet property="textField" destination="Xxw-M4-rAo" id="Bnl-1o-wys"/>
@@ -121,4 +121,7 @@
             <point key="canvasLocation" x="813" y="-550"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MapIcon" width="49" height="33"/>
+    </resources>
 </document>
