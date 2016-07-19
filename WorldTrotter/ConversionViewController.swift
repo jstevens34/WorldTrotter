@@ -62,14 +62,18 @@ class ConversionViewController: UIViewController, UITextFieldDelegate {
         
         let existingTextHasDecimalSeperator = textField.text?.rangeOfString(".")
         let replacementTextHasDecimalSeperator = string.rangeOfString(".")
-            
+        
+        let inverseSet = NSCharacterSet(charactersInString: "0123456789.-").invertedSet
+        let components = string.componentsSeparatedByCharactersInSet(inverseSet)
+        let filtered = components.joinWithSeparator("")
+        
         
         if existingTextHasDecimalSeperator != nil &&
-            replacementTextHasDecimalSeperator != nil   {
+            replacementTextHasDecimalSeperator != nil{
             return false
         }
         else{
-            return true
+            return string == filtered
         }
     }
     
