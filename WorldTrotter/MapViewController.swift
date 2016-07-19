@@ -6,4 +6,8 @@
 //  Copyright © 2016 Joe Stevens. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class MapViewController: UIViewController{
+    
+}

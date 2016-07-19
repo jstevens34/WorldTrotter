@@ -91,7 +91,7 @@
         <!--Map-->
         <scene sceneID="k3X-Ya-Mha">
             <objects>
-                <viewController id="aka-eH-wVg" sceneMemberID="viewController">
+                <viewController id="aka-eH-wVg" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="W4V-Gj-mit">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
