@@ -31,7 +31,7 @@ class MapViewController: UIViewController{
         view.addSubview(segmentedControl)
         
         let topConstraint
-            = segmentedControl.topAnchor.constraintEqualToAnchor(view.topAnchor)
+            = segmentedControl.topAnchor.constraintEqualToAnchor(topLayoutGuide.bottomAnchor, constant: 8)
         let leadingConstraint
             = segmentedControl.leadingAnchor.constraintEqualToAnchor(view.leadingAnchor)
         let trailingConstraint
