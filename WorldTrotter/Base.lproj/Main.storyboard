@@ -101,10 +101,10 @@
         <!--Map-->
         <scene sceneID="k3X-Ya-Mha">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j9C-cy-zHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="aka-eH-wVg" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="nb3-q3-rM0"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9C-cy-zHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1305" y="368"/>
         </scene>
